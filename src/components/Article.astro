@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import imageAvatar from "../assets/images/image-avatar.webp"
+---
+
+<article class="flex flex-col gap-4">
+  <header class="inline-flex flex-col gap-4">
+    <div>
+      <h2 class="px-3 py-1 bg-[#f4d04e] inline font-extrabold
+      rounded-md">
+        Learning
+      </h2>
+    </div>
+    <small class="font-semibold text-[14px]">
+      Published <time datetime="2023-12-21">21 Dec 2023</time>
+    </small>
+    <h1 class="text-[1.3rem] font-extrabold hover:text-[#f4d04e]
+    cursor-pointer">
+      HTML & CSS foundations
+    </h1>
+  </header>
+  <p class="text-[#808080]">These languages are the backbone of every website,
+    defining structure, content, and presentation.
+  </p>
+  <footer class="flex items-center gap-4">
+    <Image 
+      src={imageAvatar} 
+      alt="Avatar" 
+      class='size-7'
+    />
+    <span class="font-bold">Greg Hooper</span>
+  </footer>
+</article>
